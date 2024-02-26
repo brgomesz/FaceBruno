@@ -1,0 +1,9 @@
+parametros.css
+.conteiner {
+    width: 80%;
+    margin: auto;
+    list-style: none;
+}
+
+
+
