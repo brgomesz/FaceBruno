@@ -1,0 +1,19 @@
+resset.css
+/* Essa pasta serve para zerar vários parâmetros que vem no pacote 
+html5, como bordas, espaçamento, pontinhos antes das listas, várias coisas
+que eu não quero que seja dessa forma, portanto vamos ressetar todos esses
+itens, manualmente */
+
+resset.css * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+*focus {
+    outline: none;
+}
