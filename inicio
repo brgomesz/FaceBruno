@@ -1,0 +1,111 @@
+inicio.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./configuracoes/css/brunoJS.css">
+    <!--Para referenciar o ícone do canto da tela
+     <link rel="icon" href="./configuracoes/imagens/favicon.png"> -->
+
+    <title>Bruno | JavaScript</title>
+
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/duotone/style.css"   />
+
+</head>
+
+<body>
+    <header>
+
+        <div class="conteiner">
+            <h1>Face Bruno</h1>
+        </div>
+        <nav>
+            <div class="conteiner">
+                <ul class="menuNav">
+                    <li>
+                        <a href="inicio.html" class="active"> Inicio</a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html"> Calculadora</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="Insert">
+            <div class="conteiner">
+                <div id="post-form">
+                    <h3>O que você está pensando?</h3>
+                    <textarea id="post-text" rows="4" placeholder="Digite aqui seu pensamento"></textarea>
+                    <button id="post-button">Postar</button></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="CabeçalhoTimeline">
+            <div class="conteiner">
+                Timeline
+            </div>
+        </section>
+        <p></p>
+
+
+        <section class="LinhaDoTempo">
+            <div class="conteiner">
+                <div class="bordaPost">
+                    <ul class="listaTimeline" id="timeline">
+                        <!-- <button><i class="ph-duotone ph-thumbs-up"></i></button> -->
+                    </ul>
+                </div>
+
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+    </footer>
+
+    <script>
+        const postButton = document.getElementById('post-button');
+        const postText = document.getElementById('post-text');
+        const timeline = document.getElementById('timeline');
+        const like = document.getElementById('like');
+
+
+        postButton.addEventListener('click', () => {
+            const postContent = postText.value;
+            if (postContent.trim() !== '') {
+                const listItem = document.createElement('li');
+                listItem.textContent = postContent;
+                timeline.appendChild(listItem);
+                const likeButton = document.createElement('button');
+                likeButton.textContent = 'Curtir';
+                timeline.appendChild(likeButton);
+                postText.value = ''; // Limpa o campo de texto
+            }
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
+
+<!-- <script>
+if (variavel1 == variavel2){
+    console.log('ok')  
+}
+
+</script> -->
