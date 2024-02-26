@@ -1,0 +1,100 @@
+visual.css
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/roboto.ttf);
+}
+
+
+
+body {
+    font-family: Roboto;
+    list-style: none;
+    background-image: url(../../../img/background.png);
+}
+
+main {
+    list-style: none;
+}
+
+header {
+    background-color: rgba(137, 43, 226, 0.692);
+    width: 100%;
+    /* margem: em cima, direita, embaixo, esquerda */
+    margin: -0.5rem 0rem 0rem -0.5rem;
+    padding: 10px 3px 3px 0px;
+    color: #fff;
+}
+
+section.LinhaDoTempo {
+    background-color: rgb(137, 43, 226);
+    width: 100%;
+    /* margem: em cima, direita, embaixo, esquerda */
+    margin: 0rem 0rem 0rem -0.5rem;
+    padding: 3px 3px 3px 0px;
+    color: #fff;
+}
+
+section.CabeçalhoTimeline {
+    background-color: rgba(137, 43, 226, 0.527);
+    width: 100%;
+    /* margem: em cima, direita, embaixo, esquerda */
+    margin: 0rem 0rem 0rem -0.5rem;
+    padding: 3px 3px 3px 0px;
+    color: #fff;
+}
+
+ul.listaTimeline li {
+    border-color: rgb(253, 255, 255);
+    border-style:dashed;
+    border-width: 1px;
+    margin: 15px 0 0 0;
+    list-style: none;
+    width: 80%;
+    margin: auto;
+    list-style: none;
+}
+
+ul.listaTimeline {
+    padding: 10px;
+    border-color: black;
+    border-style:solid;
+    border-width: 2px;
+    list-style: none;
+}
+
+
+ul.listaTimeline button{
+
+    color:rgba(137, 43, 226, 0.692);
+    background-color:rgb(255, 255, 255);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.6rem;
+
+
+    font-size:small;
+    font-weight: bolder;
+
+
+}
+
+nav {
+    border-radius: 0 0 1rem 1rem;
+}
+
+
+ul.menuNav li {
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+ul.menuNav li a{
+    color: #fff;
+    padding: 1.5rem 1rem;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+}
+
