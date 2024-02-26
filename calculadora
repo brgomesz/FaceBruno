@@ -1,0 +1,61 @@
+calculadora.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./configuracoes/css/brunoJS.css">
+    <!--Para referenciar o ícone do canto da tela
+     <link rel="icon" href="./configuracoes/imagens/favicon.png"> -->
+
+    <title>Bruno | JavaScript</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="conteiner">
+            <h1>Face Bruno</h1>
+        </div>
+
+        <nav>
+            <div class="conteiner">
+                <ul class="menuNav">
+                    <li>
+                        <a href="inicio.html" class="active"> Inicio</a>
+                    </li>
+                    <li>
+                        <a href="calculadora.html"> Calculadora</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <div class="conteiner">
+            <section class="calculadora">
+                <h3>Calculadora</h3>
+
+                <div>
+                    <textarea id="KM" rows="3" placeholder="Quantos KM seu carro andou?"></textarea>
+                    <textarea id="L" rows="3" placeholder="Quantos litros seu carro gastou?"></textarea>
+                </div>
+
+                <button onclick="imprimir()">Clique aqui para imprimir o resultado</button>
+
+                <div id="resultado"></div>
+            </section>
+        </div>
+
+        <script>
+            function imprimir() {
+                const Kilometro = document.getElementById('KM').value;
+                const Litro = document.getElementById('L').value;
+                document.getElementById('resultado').textContent = `Seu carro andou ${Kilometro / Litro} Km/L `;
+            }
+        </script>
+    </main>
